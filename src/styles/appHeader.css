@@ -1,0 +1,62 @@
+/* Base styles for larger screens */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    height: 35px;
+    position: relative;
+}
+
+.header-title {
+    color: black;
+    position: absolute;
+    top: -24px;
+}
+
+/* Header styles */
+.header-main {
+    background-color: #001529; 
+}
+
+.header-main .ant-typography {
+    color: white;
+}
+
+.call-now {
+    font-size: 32px;
+}
+
+/* Adjust font size on small screens */
+@media (max-width: 768px) {
+    .call-now {
+        font-size: 22px;
+    }
+}
+
+/* Responsive styles for medium and smaller screens */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 12px;
+        top: -16px;
+    }
+
+    .header-main .ant-typography {
+        font-size: 16px; 
+    }
+
+    .header-main .ant-col {
+        flex: 1 1 100%; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 10px;
+    }
+
+    .header-main .ant-typography {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,134 @@
+/* Base styles for larger screens */
+.container {
+    color: white;
+    background-color: #292c55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+
+.appliances {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 70%;
+    margin-top: 40px;
+}
+
+.appliance-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appliance-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.text-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-content {
+    width: 70%;
+}
+
+.text-content h1 {
+    color: #292c55;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 16px;
+}
+
+.brands-container {
+    color: white;
+    background-color: #f19a0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.brands-container h1 {
+    font-size: 2rem;
+}
+
+.brands-grid {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .appliances {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .appliance-item {
+        margin-bottom: 20px;
+    }
+
+    .appliance-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text-section {
+        padding: 20px;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .brands-container {
+        padding: 20px;
+    }
+
+    .brands-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        height: auto;
+        gap: 10px;
+    }
+}

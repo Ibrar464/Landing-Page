@@ -1,0 +1,37 @@
+.contact-modal .ant-modal {
+    width: 90% !important; /* Reduce width on mobile */
+    max-width: 350px; /* Further reduction for mobile */
+    margin: 0 auto;
+}
+
+.contact-modal .ant-modal-content {
+    padding: 15px; /* Reduce padding for mobile */
+}
+
+.hide-arrows::-webkit-outer-spin-button,
+.hide-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.hide-arrows {
+    -moz-appearance: textfield;
+}
+
+@media (min-width: 768px) {
+    .contact-modal .ant-modal {
+        max-width: 400px;
+        position: absolute;
+        right: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-modal .ant-modal-content {
+        padding: 20px;
+        width: 70%;
+    }
+}
+
+
